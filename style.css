@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://i0.wp.com/dailyplanetdc.com/wp-content/uploads/2021/03/image-10.jpeg?fit=1536%2C525&ssl=1') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    scroll-behavior: smooth;
+  }
+
+  .section {
+    position: relative;
+    padding: 45px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: brightness(0.4);
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 0 0 10px #00f1ff, 0 0 25px #0066cc;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+  }
+
+  .box {
+    background-color: rgba(20, 20, 20, 0.85);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  }
+
+  .box img, .box iframe {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .box ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  .box ul li {
+    margin-bottom: 6px;
+  }
+
+  button {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: #111;
+  }
+
+  /* Scroll Animation */
+  .reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }

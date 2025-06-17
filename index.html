@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batman Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Page 1: The Batman -->
+  <section class="section">
+    <h1>The BATMAN</h1>
+    <div class="content">
+      <div class="box description">
+        <h2>Description about Batman</h2>
+        <p>Batman is a dark and mysterious vigilante who protects Gotham City from crime. With no superpowers, he uses intelligence, technology, and martial arts to fight evil. By day, he is Bruce Wayne — a billionaire philanthropist. By night, he becomes the symbol of fear among criminals: The Dark Knight.</p>
+      </div>
+      <div class="box image">
+        <img src="https://i.pinimg.com/736x/07/53/02/0753021842af5ecb8748282d33ffdffc.jpg" alt="Batman Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 2: Evolution -->
+  <section class="section">
+    <h1>Evolution of Batman</h1>
+    <div class="content">
+      <div class="box description">
+        <h2>Description</h2>
+        <p>From detective comics in the 1930s to modern-day blockbusters, Batman has undergone many transformations — from the lighthearted Caped Crusader to the gritty Dark Knight. Each version reflects the era, yet the core remains the same: justice without compromise.</p>
+        <p>Over the decades, actors like Michael Keaton, Christian Bale, and Ben Affleck have portrayed the Dark Knight, each adding their own edge and personality to the legacy.</p>
+      </div>
+      <div class="box image">
+        <img src="https://cdn-dkepej.nitrocdn.com/xHPizjaXJNONuYnLnfsGSUCsMnIlzOEq/assets/images/optimized/rev-ef469ea/blog.frame.io/wp-content/uploads/2022/03/aotc-the-batman-bts-matt-reeves-directs-cathedral.jpg" alt="Evolution">
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 3: Technology -->
+  <section class="section">
+    <h1>Batman's Technology</h1>
+    <div class="content">
+      <div class="box description">
+        <p>Batman uses high-tech gadgets, the iconic Batmobile, and his armored suit to outsmart his enemies. His gear is built at Wayne Enterprises and often upgraded after each battle.</p>
+        <ul>
+          <li><strong>Batmobile:</strong> A sleek, tank-like vehicle with weapons, boosters, and armor plating.</li>
+          <li><strong>Utility Belt:</strong> Equipped with batarangs, smoke bombs, and hacking tools.</li>
+          <li><strong>Grapple Gun:</strong> Allows Batman to scale buildings quickly.</li>
+          <li><strong>Detective Mode:</strong> Advanced scanning system built into his cowl.</li>
+          <li><strong>EMP Gun:</strong> Temporarily disables enemy electronics.</li>
+        </ul>
+      </div>
+      <div class="box image">
+        <img src="https://i0.wp.com/borg.com/wp-content/uploads/2014/05/affleck-as-batman-and-new-batmobile.jpg" alt="Suit">
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 4: Unite Superheroes -->
+  <section class="section">
+    <h1>Uniting the Superheroes</h1>
+    <div class="content">
+      <div class="box description">
+        <p>After sensing a growing threat from beyond Earth, Batman took the lead to form a team of powerful allies. He reached out to heroes across the world to defend humanity.</p>
+        <ul>
+          <li><strong>Wonder Woman:</strong> Amazon warrior with unmatched combat skills and divine weapons.</li>
+          <li><strong>Flash:</strong> Young and fast, he can bend time with his speed force abilities.</li>
+          <li><strong>Aquaman:</strong> Ruler of Atlantis and master of oceanic forces.</li>
+          <li><strong>Cyborg:</strong> Half-man, half-machine, with technological interfacing and weapons.</li>
+        </ul>
+        <p>Together, they formed the Justice League — Earth's final line of defense against cosmic threats.</p>
+      </div>
+      <div class="box image">
+        <img src="https://townsquare.media/site/442/files/2016/07/Justice-League.jpg?w=780&q=75" alt="Justice League">
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 5: Fight with Superman -->
+  <section class="section">
+    <h1>Batman vs Superman</h1>
+    <div class="content">
+      <div class="box description">
+        <p>Batman vs Superman was more than just a clash — it was a test of belief. Batman believed power must be checked, while Superman stood for hope and freedom. Batman used a specially designed armored suit and Kryptonite weapons to level the battlefield.</p>
+        <p>The fight ended in understanding, paving the way for unity against greater threats like Doomsday and Steppenwolf.</p>
+      </div>
+      <div class="box video">
+        <iframe width="100%" height="315" src="video.mp4" title="Batman v Superman" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 6: Famous Dialogue -->
+  <section class="section">
+    <h1>Famous Dialogue</h1>
+    <div class="content">
+      <div class="box">
+        <h2>“I’m Batman.”</h2>
+        <p>– A timeless line that defines fear and mystery.</p>
+        <button onclick="speakBatman()">🎤 Interact with Batman</button>
+        <ul>
+          <li>"It's not who I am underneath, but what I do that defines me."</li>
+          <li>"I have one power... I never give up."</li>
+          <li>"Criminals are a superstitious and cowardly lot."</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 7: Login Form -->
+  <section class="section">
+    <h1>Join the Knight Club</h1>
+    <div class="content">
+      <form class="box" id="loginForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" required><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required><br><br>
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- JavaScript for Voice Interaction -->
+  <script>
+    function speakBatman() {
+      const dialogue = "I'm Batman.";
+      const utter = new SpeechSynthesisUtterance(dialogue);
+      utter.pitch = 0.4; // Deep male voice
+      utter.rate = 0.9;
+      utter.volume = 1;
+      utter.voice = speechSynthesis.getVoices().find(voice =>
+        voice.name.toLowerCase().includes('english') && voice.name.toLowerCase().includes('male')
+      ) || speechSynthesis.getVoices()[0];
+
+      window.speechSynthesis.speak(utter);
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const message = 'Welcome to Knight Club';
+      const synth = window.speechSynthesis;
+      const utter = new SpeechSynthesisUtterance(message);
+      synth.speak(utter);
+      alert(message);
+    });
+
+    let voices = [];
+    function loadVoices() {
+      voices = window.speechSynthesis.getVoices();
+      if (voices.length > 0) return;
+      setTimeout(loadVoices, 100);
+    }
+
+    loadVoices();
+    function revealSections() {
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => {
+      const rect = content.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        content.classList.add('reveal');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealSections);
+  window.addEventListener('load', revealSections);
+  </script>
+</body>
+</html>
