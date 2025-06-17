@@ -41,5 +41,5 @@ A multi-section interactive webpage showcasing the legacy, technology, and story
 
 
 ## 🙋‍♂️ Author
-Created with 💙 by Aadarsh Singh
-🔗 GitHub Profile
+Created with 💙 by [Aadarsh Singh](https://github.com/Aadarsh225)
+
