@@ -38,8 +38,8 @@ A multi-section interactive webpage showcasing the legacy, technology, and story
 - JavaScript (Vanilla)
 - Web Speech API
 
-## 🧠 How to Run
 
-🙋‍♂️ Author
+
+## 🙋‍♂️ Author
 Created with 💙 by Aadarsh Singh
 🔗 GitHub Profile
