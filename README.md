@@ -40,6 +40,6 @@ A multi-section interactive webpage showcasing the legacy, technology, and story
 
 ## 🧠 How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/batman-universe.git
+🙋‍♂️ Author
+Created with 💙 by Aadarsh Singh
+🔗 GitHub Profile
